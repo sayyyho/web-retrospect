@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap");
+
+html body {
+  background-image: url("../src/img/back.png");
+  font-size: 20px;
+}
+
+* {
+  font-family: "Noto Serif KR", serif;
+  color: black;
+  margin: 0;
+}
+
+#menu-bar {
+  display: flex;
+  align-items: baseline;
+  border-bottom: 3px double black;
+  padding: 1em;
+}
+
+.menu-item-1 {
+  flex-grow: 2;
+}
+
+.menu-item-2 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+section a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+a:hover {
+  transition: 0.3s ease-in-out;
+  color: #9ba4b5;
+}
+
+section {
+  display: flex;
+  width: 100vw;
+  min-height: 84vh;
+  align-content: center;
+}
+
+#posting {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contents {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding: 0.5vh;
+  height: 1.5em;
+  display: flex;
+  border-top: 2.5px double black;
+}
+
+span {
+  display: flex;
+  flex-grow: 1;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+}
