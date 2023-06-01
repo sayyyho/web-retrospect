@@ -71,6 +71,7 @@ footer {
   height: 1.5em;
   display: flex;
   border-top: 2.5px double black;
+  display: none;
 }
 
 span {
