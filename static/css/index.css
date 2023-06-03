@@ -48,22 +48,23 @@ a:hover {
 
 section {
   display: flex;
-  width: 100vw;
-  min-height: 84vh;
-  align-content: center;
+  min-height: 80vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .posting {
   flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 
 .contents {
   flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 

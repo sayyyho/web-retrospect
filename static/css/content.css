@@ -1,48 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap");
 
-html,
-body {
-  height: 100%;
+html body {
+  height: 100vh;
+  background-image: url("../src/img/back.png");
+  font-size: 20px;
 }
 
-body {
-  background-image: url("../src/img/back.png");
+* {
   font-family: "Noto Serif KR", serif;
   color: black;
   margin: 0;
-  text-align: center;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 85vh;
 }
 
 #menu-bar {
   text-align: center;
   border-bottom: 3px double black;
-  padding: 1rem;
+  padding: 1em;
 }
 
-/* #menu-bar > div {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-left: 1vh;
-  margin-right: 1vh;
-} */
-
-a {
-  color: black;
-  font-weight: bold;
+nav a {
   text-decoration: none;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 a:hover {
   transition: 0.3s ease-in-out;
   color: #9ba4b5;
+}
+
+section {
+  display: flex;
+  min-height: 80vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#data-list {
+  list-style: none;
+  padding-left: 0;
+
+  width: 100%;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 10px;
+  text-align: center;
 }
 
 footer {
@@ -53,28 +60,3 @@ footer {
   position: relative;
   transform: translatY(-100%);
 }
-
-p {
-  font-size: 10px;
-  text-align: center;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-button {
-  background-color: transparent;
-  /* float: right; */
-  font-weight: bold;
-  color: white;
-  font-size: 17px;
-  border: none;
-  /* padding: 10px 20px; */
-  padding-bottom: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* css 분명 간소화 가능 */

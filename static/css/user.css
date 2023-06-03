@@ -36,13 +36,14 @@ a:hover {
 }
 
 section {
-  width: 100vw;
-  min-height: 84vh;
-  align-content: center;
+  min-height: 80vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 #user-greeting {
-  padding-top: 30vh;
+  padding-top: 25vh;
   text-align: center;
 }
 
