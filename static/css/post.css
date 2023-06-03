@@ -10,13 +10,12 @@ body {
 * {
   font-family: "Noto Serif KR", serif;
   color: black;
-  font-weight: bold;
 }
 
 #menu-bar {
   text-align: center;
   border-bottom: 3px double black;
-  padding: 1em;
+  padding: 1rem;
 }
 
 nav a {
@@ -28,13 +27,6 @@ nav a {
 a:hover {
   transition: 0.3s ease-in-out;
   color: #9ba4b5;
-}
-
-footer {
-  padding: 0.5vh;
-  height: 1.5em;
-  display: none;
-  border-top: 2.5px double black;
 }
 
 span {
@@ -97,9 +89,22 @@ input:focus {
 .submit-button:hover {
   background-color: black;
   transition: 0.5s ease-in-out;
-  /* font-size: 22px; */
 }
 
 input::placeholder {
   color: #808080;
+}
+
+footer {
+  min-height: 3.5vh;
+  display: grid;
+  place-items: center;
+  border-top: 2.5px double black;
+  position: relative;
+  transform: translatY(-100%);
+}
+
+p {
+  font-size: 10px;
+  text-align: center;
 }

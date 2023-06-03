@@ -13,15 +13,18 @@
         <a href="/">한 줄, 회고</a>
       </div>
     </nav>
-    <div class="wrapper">
-      <div class="item">
-        <h2>반갑습니다 <span class="greeting"></span>님!</h2>
-        User : <span id="email">{{ email }}</span>
-        <br />
-        포스팅 횟수 : <span id="count-posting"></span>
-      </div>
-    </div>
-    <footer>retrospect</footer>
+    <section class="wrapper">
+      <h2 id="user-greeting">반갑습니다 <span class="greeting"></span>님!</h2>
+      <article>
+        <div id="user-info">
+          사용자 : <span id="email">{{ email }}</span>
+          <div id="count-posting"></div>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <p>Copyright 2023. sayyyho. All rights reserved.</p>
+    </footer>
     <script src="../static/js/user.js"></script>
   </body>
 </html>

@@ -29,4 +29,4 @@ if (checkData !== null) {
   cntData.forEach(cntNum);
 }
 
-cntPost.innerText = cnt + "회";
+cntPost.innerText = "포스팅 횟수 :" + cnt + "회";

@@ -1,7 +1,7 @@
 const logintStatus = document.querySelector("#login");
 const myPageButton = document.querySelector("#user-info");
-const postingButton = document.querySelector("#posting");
-const contentButton = document.querySelector("#contents");
+const postingButton = document.querySelector("#a-posting");
+const contentButton = document.querySelector("#a-contents");
 const USER_KEY = "user";
 
 let userName = sessionStorage.getItem(USER_KEY);

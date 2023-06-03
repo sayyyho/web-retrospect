@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap");
 
 html body {
+  height: 100vh;
   background-image: url("../src/img/back.png");
   font-size: 20px;
 }
@@ -52,14 +53,14 @@ section {
   align-content: center;
 }
 
-#posting {
+.posting {
   flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#contents {
+.contents {
   flex-grow: 1;
   display: flex;
   justify-content: center;
@@ -67,17 +68,14 @@ section {
 }
 
 footer {
-  padding: 0.5vh;
-  height: 1.5em;
-  display: flex;
+  min-height: 3.5vh;
+  display: grid;
+  place-items: center;
   border-top: 2.5px double black;
-  display: none;
+  position: relative;
 }
 
-span {
-  display: flex;
-  flex-grow: 1;
-  font-size: 1em;
-  align-items: center;
-  justify-content: center;
+p {
+  font-size: 10px;
+  text-align: center;
 }

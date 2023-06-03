@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap");
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-image: url("../src/img/back.png");
   font-family: "Noto Serif KR", serif;
   color: black;
   margin: 0;
   text-align: center;
-  font-weight: bold;
 }
 
 .wrapper {
@@ -17,22 +21,23 @@ body {
 }
 
 #menu-bar {
-  align-items: baseline;
-  border-bottom: 1px solid black;
-  min-height: 7vh;
+  text-align: center;
+  border-bottom: 3px double black;
+  padding: 1rem;
 }
 
-#menu-bar > div {
+/* #menu-bar > div {
   margin-top: 2vh;
   margin-bottom: 2vh;
   margin-left: 1vh;
   margin-right: 1vh;
-}
+} */
 
 a {
   color: black;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 a:hover {
@@ -41,11 +46,17 @@ a:hover {
 }
 
 footer {
+  min-height: 3.5vh;
+  display: grid;
+  place-items: center;
+  border-top: 2.5px double black;
+  position: relative;
+  transform: translatY(-100%);
+}
+
+p {
+  font-size: 10px;
   text-align: center;
-  font-weight: bold;
-  margin-top: 2vh;
-  min-height: 3vh;
-  display: none;
 }
 
 ul {
@@ -64,10 +75,6 @@ button {
   padding-bottom: 10px;
   border-radius: 4px;
   cursor: pointer;
-}
-
-span {
-  font-weight: 1500;
 }
 
 /* css 분명 간소화 가능 */
