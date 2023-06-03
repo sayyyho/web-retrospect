@@ -11,10 +11,6 @@ def home():
     data[0] = ""
     return render_template("index.html",user=user)
 
-@app.route("/index")
-def index():
-    return render_template("index.html")
-
 @app.route("/login/")
 def login():
     code = request.args.get('code')
